@@ -1,38 +1,49 @@
-#pragma once
-#include <iostream>
-#include <string>
+#include<iostream>
+#include<string.h>
 using namespace std;
 
-class Attendance {
+class Attendance
+{
 private:
     string attendance_id;
-    string employee_id;
-    string date;
-    string check_in_time;
-    string check_out_time;
-    string status;
+    string Employee_id;
+    string Assignment_id;
+    string attendace_date;
+    string check_in;
+    string check_out;
 
 public:
     Attendance();
-    Attendance(string attendance_id, string employee_id, string date, string check_in_time, string check_out_time, string status);
+    Attendance(
+    string attendance_id,
+    string Employee_id,
+    string Assignment_id,
+    string attendace_date,
+    string check_in,
+    string check_out
+
+    );
 
     string getAttendance_id() const;
-    void setAttendance_id(const string& attendance_id);
+    void setAttendance_id (const string& attendance_id);
 
     string getEmployee_id() const;
-    void setEmployee_id(const string& employee_id);
+    void setEmployee_id(const string& Employee_id);
 
-    string getDate() const;
-    void setDate(const string& date);
+    string getAssignment_id() const;
+    void setAssigment_id(const string& Assignment_id);
 
-    string getCheck_in_time() const;
-    void setCheck_in_time(const string& check_in_time);
+    string getAttendance_date() const;
+    void setAttendance_date(const string& attendance_date);
 
-    string getCheck_out_time() const;
-    void setCheck_out_time(const string& check_out_time);
+    string getCheck_in() const;
+    void setCheck_in(const string& check_in);
 
-    string getStatus() const;
-    void setStatus(const string& status);
+    string getCheck_out() const;
+    void setCheck_out(const string& check_out);
 
     void Show() const;
+
+
 };
+
