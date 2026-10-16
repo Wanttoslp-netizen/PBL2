@@ -1,38 +1,49 @@
-#pragma once
-#include <iostream>
-#include <string>
+#include<iostream>
+#include<string.h>
 using namespace std;
 
-class Assignment {
+class Assignment
+{
 private:
     string assignment_id;
-    string employee_id;
-    string vehicle_id;
-    string route_id;
-    string date;
-    string shift;
-
+    string Employee_id;
+    string Vehicle_id;
+    string Shift_id;
+    string assignment_date;
+    string assignmet_status;
 public:
+//constructor
     Assignment();
-    Assignment(string assignment_id, string employee_id, string vehicle_id, string route_id, string date, string shift);
+    Assignment(
+    string assignment_id,
+    string Employee_id,
+    string Vehicle_id,
+    string Shift_id,
+    string assignment_date,
+    string assignmet_status
+    );
+//Get,set
 
-    string getAssignment_id() const;
-    void setAssignment_id(const string& assignment_id);
+string getAssignment_id ()const;
+void setAssignment_id(const string& assignment_id);
 
-    string getEmployee_id() const;
-    void setEmployee_id(const string& employee_id);
+string getEmployee_id() const;
+void setEmployee_id(const string& Employee_id);
 
-    string getVehicle_id() const;
-    void setVehicle_id(const string& vehicle_id);
+string getVehicle_id() const;
+void setVehicle_id(const string& Vehicle_id);
 
-    string getRoute_id() const;
-    void setRoute_id(const string& route_id);
+string getShift_id() const;
+void setShift_id(const string& Shift_id);
 
-    string getDate() const;
-    void setDate(const string& date);
+string getAssignment_date() const;
+void setAssignment_date(const string& assignmnet_date);
 
-    string getShift() const;
-    void setShift(const string& shift);
+string getAssignment_status() const;
+void setAssignment_status(const string& assignment_status);
 
-    void Show() const;
+void Show() const;
+
+
+
 };
