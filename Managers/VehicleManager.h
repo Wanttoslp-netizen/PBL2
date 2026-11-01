@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../Objects/Vehicle.h"
+#include "Vehicle.h"
 #include <string>
 
 using namespace std;
@@ -19,7 +19,9 @@ public:
 
     int getSize() const;
     int getCapacity() const;
-    Vehicle* getArr() const;
+
+    Vehicle* getArr();
+    const Vehicle* getArr() const;
 
     // Nap chong toan tu
     VehicleManager& operator+=(const Vehicle& vehicle);     // Them phuong tien
